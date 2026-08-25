@@ -6,10 +6,8 @@ class Solution:
             return True
         else:
             y = str(x)
-            length = last_index = len(y)
-            for i in range(length):
-                last_index -= 1
-                if y[i] != y[last_index]:
+            for i in range(len(y)):
+                if y[i] != y[-(i+1)]:
                     return False
         
         return True

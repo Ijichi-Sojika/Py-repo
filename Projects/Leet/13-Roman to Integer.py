@@ -1,7 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        ls = [1]
-        ls.pop(0)
+        ls = []
         for char in s:
             match char:
                 case "I":
